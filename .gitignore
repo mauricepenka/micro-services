@@ -2,11 +2,12 @@
 *.class
 
 #dir target
-weather-service-javaee/target
-weather-service-spring/target
-weather-service-javaee/.settings
-weather-service-spring/.settings
-weather-service-spring/.idea
+weather-service-javaee/target/*
+weather-service-spring/target/*
+weather-service-javaee/.settings/*
+weather-service-spring/.settings/*
+weather-service-spring/.idea/*
+weatherApp/node_modules/*
 
 
 # Log file
