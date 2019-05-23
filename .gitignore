@@ -1,6 +1,11 @@
 # Compiled class file
 *.class
 
+#dir target
+weather-service-javaee/target
+weather-service-spring/target
+
+
 # Log file
 *.log
 
