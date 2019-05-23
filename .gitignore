@@ -6,6 +6,7 @@ weather-service-javaee/target
 weather-service-spring/target
 weather-service-javaee/.settings
 weather-service-spring/.settings
+weather-service-spring/.idea
 
 
 # Log file
