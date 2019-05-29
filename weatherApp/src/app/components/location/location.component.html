@@ -1,0 +1,25 @@
+<div class="card" style="max-width: 50rem;">
+  <h5 class="card-header">Liste Of Locations</h5>
+  <div class="card-body">
+    <div>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name Location</th>
+            <th scope="col">Temperature</th>
+            <th scope="col">Temperature Scale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let location of locations">
+            <td>{{location.id}}</td>
+            <td>{{location.name}}</td>
+            <td>{{location.temperature.temperature}}</td>
+            <td>{{location.temperature.temperatureScale}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

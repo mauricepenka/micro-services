@@ -1,0 +1,23 @@
+<div class="card" style="max-width: 50rem;">
+  <h5 class="card-header">Liste Des Temperatures</h5>
+  <div class="card-body">
+    <div>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Temperature</th>
+            <th scope="col">Temperature Scale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let temperature of temperatures">
+            <td>{{temperature.id}}</td>
+            <td>{{temperature.temperature}}</td>
+            <td>{{temperature.temperatureScale}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

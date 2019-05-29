@@ -1,22 +1,33 @@
 package com.packtpub.microservices.weather.domain;
 
+import java.util.Random;
+
 public class Temperature {
-	private Double temperature;
-	private TemperatureScale temperatureScale;
+    private Long id;
+    private Integer temperature;
+    private TemperatureScale temperatureScale;
 
-	public Double getTemperature() {
-		return temperature;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setTemperature(Double temperature) {
-		this.temperature = temperature;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public TemperatureScale getTemperatureScale() {
-		return temperatureScale;
-	}
+    public Integer getTemperature() {
+        return temperature;
+    }
 
-	public void setTemperatureScale(TemperatureScale temperatureScale) {
-		this.temperatureScale = temperatureScale;
-	}
+    public void setTemperature(Integer temperature) {
+        this.temperature = temperature;
+    }
+
+    public TemperatureScale getTemperatureScale() {
+        return temperatureScale;
+    }
+
+    public void setTemperatureScale(TemperatureScale temperatureScale) {
+        this.temperatureScale = temperatureScale;
+    }
 }
