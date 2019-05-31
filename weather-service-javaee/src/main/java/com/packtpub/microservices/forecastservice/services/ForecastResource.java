@@ -21,10 +21,6 @@ import com.packtpub.microservices.forecastservice.producer.WebTargetProducer;
 
 @Path("/forecast")
 public class ForecastResource {
-//	@Uri("location")
-//	private WebTarget locationTarget;
-//	@Uri("temperature/{city}")
-//	private WebTarget temperatureTarget;
 	@Inject
 	WebTargetProducer targetProducer;	
 
