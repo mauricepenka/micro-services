@@ -2,6 +2,7 @@ package com.packtpub.microservices.weather.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +13,7 @@ import org.springframework.web.filter.CorsFilter;
 @Configuration
 @ComponentScan(basePackages = {"com.packtpub.microservices.weather"})
 @EnableAutoConfiguration
+@SpringBootApplication
 public class WeatherServiceApplication {
 
 	@Bean
