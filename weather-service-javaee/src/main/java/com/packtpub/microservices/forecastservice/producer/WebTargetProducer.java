@@ -20,13 +20,25 @@ public class WebTargetProducer {
 	@Produces
 	@Dependent
 	public WebTarget produceLocationWebTarget() {
-		return client.target("http://localhost:8080").path("forecast-service").path("smartcity").path("location");
+		return client.target("http://localhost:8180").path("forecast-service").path("smartcity").path("location");
 	}
 
 	@Produces
 	@Dependent
 	public WebTarget producetemperatureWebTarget() {
-		return client.target("http://localhost:8080").path("forecast-service").path("smartcity").path("temperature")
+		return client.target("http://localhost:8180").path("forecast-service").path("smartcity").path("temperature")
 				.path("/{city}");
+	}
+
+	@Produces
+	@Dependent
+	public WebTarget produceAtmosphericPressureWebTarget() {
+		return client.target("http://localhost:8090").path("weather").path("humidity").path("/{city}");
+	}
+
+	@Produces
+	@Dependent
+	public WebTarget produceHumidityWebTarget() {
+		return client.target("http://localhost:8090").path("weather").path("pressure").path("/{city}");
 	}
 }
