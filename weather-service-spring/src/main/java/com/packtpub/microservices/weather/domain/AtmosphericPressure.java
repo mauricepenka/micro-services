@@ -23,11 +23,11 @@ public class AtmosphericPressure {
         this.value = value;
     }
 
-    public com.packtpub.microservices.weather.enumm.PressureScale getPressureScale() {
+    public PressureScale getPressureScale() {
         return PressureScale;
     }
 
-    public void setPressureScale(com.packtpub.microservices.weather.enumm.PressureScale pressureScale) {
+    public void setPressureScale(PressureScale pressureScale) {
         PressureScale = pressureScale;
     }
 }
